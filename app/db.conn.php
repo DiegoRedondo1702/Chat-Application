@@ -5,10 +5,10 @@ $sName = "localhost";
 # user name
 $uName = "root";
 # password
-$pass = "root";
+$pass = "";
 
 # database name
-$db_name = "chat_app_db";
+$db_name = "data_base_chat_app";
 
 #creating database connection
 try {
