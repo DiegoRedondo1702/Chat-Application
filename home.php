@@ -2,7 +2,7 @@
     session_start();
 
     if (isset($_SESSION['username'])) {
-        # database connection file
+        
         include 'app/db.conn.php';
 
         include 'app/helpers/user.php';
@@ -10,10 +10,10 @@
         include 'app/helpers/timeAgo.php';
         include 'app/helpers/last_chat.php';
 
-        # Getting User data data
+        
         $user = getUser($_SESSION['username'], $conn);
 
-        # Getting User conversations
+        
         $conversations = getConversation($user['user_id'], $conn);
 
     ?>
@@ -33,9 +33,9 @@
                 justify-content-center
                 align-items-center
                 vh-100">
-        <div class="p-2 w-400
+        <div style="width: 650px;" class="p-2 w-400
                     rounded shadow">
-            <div>
+            <div style="height: 600px; width: 600px;">
                 <div class="d-flex
                             mb-3 p-3 bg-light
                             justify-content-between
@@ -47,7 +47,7 @@
                         <h3 class="fs-xs m-2"><?=$user['name']?></h3> 
                     </div>
                     <a href="logout.php"
-                    class="btn btn-dark">Logout</a>
+                    class="btn btn-dark">Salir</a>
                 </div>
 
                 <div class="input-group mb-3">
@@ -96,7 +96,7 @@
                         <div class="alert alert-info 
                                     text-center">
                         <i class="fa fa-comments d-block fs-big"></i>
-                        No messages yet, Start the conversation
+                        Aún no hay mensajes, inicia la conversación.
                         </div>
                     <?php } ?>
                 </ul>
@@ -109,7 +109,7 @@
     <script>
         $(document).ready(function(){
         
-        // Search
+        
         $("#searchText").on("input", function(){
             var searchText = $(this).val();
             if(searchText == "") return;
@@ -122,7 +122,7 @@
                 });
         });
 
-        // Search using the button
+        
         $("#serachBtn").on("click", function(){
             var searchText = $("#searchText").val();
             if(searchText == "") return;
@@ -136,18 +136,11 @@
         });
 
 
-        /** 
-         auto update last seen 
-        for logged in user
-        **/
         let lastSeenUpdate = function(){
             $.get("app/ajax/update_last_seen.php");
         }
         lastSeenUpdate();
-        /** 
-         auto update last seen 
-        every 10 sec
-        **/
+       
         setInterval(lastSeenUpdate, 10000);
 
         });

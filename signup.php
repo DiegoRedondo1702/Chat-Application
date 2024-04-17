@@ -32,7 +32,7 @@
 	 		     class="w-25">
 	 		<h3 class="display-4 fs-1 
 	 		           text-center">
-	 			       Sign Up</h3>   
+	 			       Registrarse</h3>   
 	 		</div>
 
 	 		<?php if (isset($_GET['error'])) { ?>

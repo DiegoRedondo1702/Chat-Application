@@ -26,10 +26,7 @@ if (isset($_SESSION['username'])) {
     
     # if the message inserted
     if ($res) {
-    	/**
-       check if this is the first
-       conversation between them
-       **/
+    	
        $sql2 = "SELECT * FROM conversations
                WHERE (user_1=? AND user_2=?)
                OR    (user_2=? AND user_1=?)";
@@ -38,7 +35,7 @@ if (isset($_SESSION['username'])) {
 
 	    // setting up the time Zone
 		// It Depends on your location or your P.c settings
-		define('TIMEZONE', 'Africa/Addis_Ababa');
+		define('TIMEZONE', 'America/Caracas');
 		date_default_timezone_set(TIMEZONE);
 
 		$time = date("h:i:s a");
