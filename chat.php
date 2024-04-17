@@ -63,7 +63,7 @@
                             <div class="online"></div>
                             <small class="d-block p-1">Online</small>
                         <?php }else{ ?>
-                            <small class="d-block p-1">
+                            <small  class="d-block p-1">
                                 Last seen:
                                 <?=last_seen($chatWith['last_seen'])?>
                             </small>
@@ -81,18 +81,18 @@
                         foreach($chats as $chat){
                             if($chat['from_id'] == $_SESSION['user_id'])
                             { ?>
-                            <p class="rtext align-self-end
+                            <p style="background-color:aquamarine;" class="rtext align-self-end
                                     border rounded p-2 mb-1">
                                 <?=$chat['message']?> 
-                                <small class="d-block">
+                                <small style="color: black;" class="d-block">
                                     <?=$chat['created_at']?>
                                 </small>      	
                             </p>
                         <?php }else{ ?>
-                        <p class="ltext border 
+                        <p style="background-color:#6ac1ff; color:black" class="ltext border 
                                 rounded p-2 mb-1">
                             <?=$chat['message']?> 
-                            <small class="d-block">
+                            <small style="color: black;" class="d-block">
                                 <?=$chat['created_at']?>
                             </small>      	
                         </p>
