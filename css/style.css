@@ -73,3 +73,7 @@ small {
 textarea {
 	resize: none;
 }
+
+*{
+	font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
