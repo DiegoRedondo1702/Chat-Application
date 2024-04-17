@@ -29,7 +29,7 @@
         <link rel="icon" href="img/logo.png">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
-    <body class="d-flex
+    <body background="img/retro.jpg" class="d-flex
                 justify-content-center
                 align-items-center
                 vh-100">

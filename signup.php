@@ -15,7 +15,7 @@
 	      href="css/style.css">
 	<link rel="icon" href="img/logo.png">
 </head>
-<body class="d-flex
+<body background="img/retro.jpg" class="d-flex
              justify-content-center
              align-items-center
              vh-100">
