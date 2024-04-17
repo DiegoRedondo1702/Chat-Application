@@ -5,7 +5,7 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -52,7 +52,7 @@
 
 	 	  <div class="mb-3">
 		    <label class="form-label">
-		           Name</label>
+		           Nombre</label>
 		    <input type="text"
 		           name="name"
 		           value="<?=$name?>" 
@@ -61,7 +61,7 @@
 
 		  <div class="mb-3">
 		    <label class="form-label">
-		           User name</label>
+		           Nombre de usuario</label>
 		    <input type="text" 
 		           class="form-control"
 		           value="<?=$username?>" 
@@ -71,7 +71,7 @@
 
 		  <div class="mb-3">
 		    <label class="form-label">
-		           Password</label>
+		           Contraseña</label>
 		    <input type="password" 
 		           class="form-control"
 		           name="password">
@@ -79,7 +79,7 @@
 
 		  <div class="mb-3">
 		    <label class="form-label">
-		           Profile Picture</label>
+		           Foto de perfil</label>
 		    <input type="file" 
 		           class="form-control"
 		           name="pp">
@@ -87,7 +87,7 @@
 		  
 		  <button type="submit" 
 		          class="btn btn-primary">
-		          Sign Up</button>
+		          Registrarse</button>
 		  <a href="index.php">Login</a>
 		</form>
 	 </div>
