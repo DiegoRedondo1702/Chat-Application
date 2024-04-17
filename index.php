@@ -3,7 +3,7 @@
     if (!isset($_SESSION['username'])) {
 ?>
     <!DOCTYPE html>
-    <html lang="en">
+    <html lang="es">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,9 +29,7 @@
                     class="w-25">
                 <h3 class="display-4 fs-1 
                         text-center">
-                        LOGIN</h3>   
-
-
+                        Iniciar Sesión</h3>   
                 </div>
                 <?php if (isset($_GET['error'])) { ?>
                 <div class="alert alert-warning" role="alert">
@@ -54,7 +52,7 @@
 
             <div class="mb-3">
                 <label class="form-label">
-                    Password</label>
+                    Contraseña</label>
                 <input type="password" 
                     class="form-control"
                     name="password">
@@ -62,8 +60,8 @@
             
             <button type="submit" 
                     class="btn btn-primary">
-                    LOGIN</button>
-            <a href="signup.php">Sign Up</a>
+                    Iniciar Sesión</button>
+            <a href="signup.php">Registrarse</a>
             </form>
         </div>
     </body>
