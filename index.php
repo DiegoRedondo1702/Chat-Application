@@ -8,6 +8,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Chat App - Login</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Orbitron:wght@400;700&family=Bebas+Neue&display=swap">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
         <link rel="stylesheet" 
             href="css/style.css">
@@ -17,7 +18,7 @@
                 justify-content-center
                 align-items-center
                 vh-100">
-        <div class="w-400 p-5 shadow rounded">
+        <div style="border: 2px solid #00FFFF;" class="w-400 p-5 shadow rounded">
             <form method="post" 
                 action="app/http/auth.php">
                 <div class="d-flex
@@ -27,9 +28,9 @@
 
                 <img src="img/logo.png" 
                     class="w-25">
-                <h3 class="display-4 fs-1 
-                        text-center">
-                        Iniciar Sesión</h3>   
+                    <h3 style="background-color:#d300e7; color:#00FFFF;" class="display-4 fs-4 text-center">
+                        Inicio de Sesión
+                    </h3> 
                 </div>
                 <?php if (isset($_GET['error'])) { ?>
                 <div class="alert alert-warning" role="alert">
@@ -43,15 +44,15 @@
                 </div>
                 <?php } ?>
             <div class="mb-3">
-                <label class="form-label">
-                    User name</label>
+                <label style="color:#00FFFF;" class="form-label">
+                    Usuario</label>
                 <input type="text" 
                     class="form-control"
                     name="username">
             </div>
 
             <div class="mb-3">
-                <label class="form-label">
+                <label style="color:#00FFFF;" class="form-label">
                     Contraseña</label>
                 <input type="password" 
                     class="form-control"

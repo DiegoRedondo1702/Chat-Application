@@ -33,19 +33,17 @@
                 justify-content-center
                 align-items-center
                 vh-100">
-        <div style="width: 650px;" class="p-2 w-400
+        <div class="p-2 w-400
                     rounded shadow">
-            <div style="height: 600px; width: 600px;">
+            <div >
                 <div class="d-flex
                             mb-3 p-3 bg-light
                             justify-content-between
                             align-items-center">
-                    <div class="d-flex
-                                align-items-center">
-                        <img src="uploads/<?=$user['p_p']?>"
-                            class="w-25 rounded-circle">
-                        <h3 class="fs-xs m-2"><?=$user['name']?></h3> 
-                    </div>
+                            <div class="d-flex align-items-center">
+                            <img src="uploads/<?=$user['p_p']?>" class="w-25 rounded-circle" style="width: 70px; height: 70px;"> 
+                            <h3 class="fs-6 m-2"><?=$user['name']?></h3> 
+                            </div>
                     <a href="logout.php"
                     class="btn btn-dark">Salir</a>
                 </div>
@@ -74,7 +72,7 @@
                                 <div class="d-flex
                                             align-items-center">
                                     <img src="uploads/<?=$conversation['p_p']?>"
-                                        class="w-10 rounded-circle">
+                                        class="w-10 rounded-circle" style="width: 70px; height: 70px;">
                                     <h3 class="fs-xs m-2">
                                         <?=$conversation['name']?><br>
                         <small>
