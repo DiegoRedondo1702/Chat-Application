@@ -23,6 +23,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Chat App - Home</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Orbitron:wght@400;700&family=Bebas+Neue&display=swap">
+
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
         <link rel="stylesheet" 
             href="css/style.css">
@@ -35,12 +37,8 @@
                 vh-100">
         <div class="p-2 w-400
                     rounded shadow">
-            <div >
-                <div class="d-flex
-                            mb-3 p-3 bg-light
-                            justify-content-between
-                            align-items-center">
-                            <div class="d-flex align-items-center">
+            <div style=" color:#00FFFF;">
+            <div class="d-flex mb-3 p-3 justify-content-between align-items-center" style="border: 2px solid #00FFFF; background-color: #d300e7; border-radius: 10px;">                            <div class="d-flex align-items-center">
                             <img src="uploads/<?=$user['p_p']?>" class="w-25 rounded-circle" style="width: 70px; height: 70px;"> 
                             <h3 class="fs-6 m-2"><?=$user['name']?></h3> 
                             </div>
@@ -48,9 +46,10 @@
                     class="btn btn-dark">Salir</a>
                 </div>
 
-                <div class="input-group mb-3">
-                    <input type="text"
-                        placeholder="Search..."
+                <div style="  border: 2px solid #FF00FF;   border-radius: 10px;" class="input-group mb-3">
+
+                    <input style="background-color:#00FFFF ; color:#d300e7;" type="text"
+                        placeholder="Buscar..."
                         id="searchText"
                         class="form-control">
                     <button class="btn btn-primary" 
@@ -64,8 +63,8 @@
                         <?php 
 
                         foreach ($conversations as $conversation){ ?>
-                        <li class="list-group-item">
-                            <a href="chat.php?user=<?=$conversation['username']?>"
+                        <li style="  border: 2px solid #FF00FF; background-color:#00FFFF; border-radius: 10px;" class="list-group-item">
+                            <a  href="chat.php?user=<?=$conversation['username']?>"
                             class="d-flex
                                     justify-content-between
                                     align-items-center p-2">
@@ -75,7 +74,7 @@
                                         class="w-10 rounded-circle" style="width: 70px; height: 70px;">
                                     <h3 class="fs-xs m-2">
                                         <?=$conversation['name']?><br>
-                        <small>
+                        <small >
                             <?php 
                             echo lastChat($_SESSION['user_id'], $conversation['user_id'], $conn);
                             ?>

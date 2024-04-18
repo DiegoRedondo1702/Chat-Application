@@ -24,7 +24,7 @@ if (isset($_SESSION['username'])) {
          foreach ($users as $user) {
          	if ($user['user_id'] == $_SESSION['user_id']) continue;
        ?>
-       <li class="list-group-item">
+       <li style="  border: 2px solid #FF00FF; background-color:#00FFFF; border-radius: 10px;" class="list-group-item">
 		<a href="chat.php?user=<?=$user['username']?>"
 		   class="d-flex
 		          justify-content-between
@@ -42,11 +42,11 @@ if (isset($_SESSION['username'])) {
 		 </a>
 	   </li>
        <?php } }else { ?>
-         <div class="alert alert-info 
+         <div style="background-color:#00FFFF; border: 2px solid #d300e7;" class="alert alert-info 
     				 text-center">
-		   <i class="fa fa-user-times d-block fs-big"></i>
-           The user "<?=htmlspecialchars($_POST['key'])?>"
-           is  not found.
+		   <i style=" color:#d300e7;" class="fa fa-user-times d-block fs-big"></i>
+           El usuario "<?=htmlspecialchars($_POST['key'])?>"
+           No ha sido encontrado.
 		</div>
     <?php }
     }

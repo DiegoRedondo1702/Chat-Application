@@ -31,7 +31,7 @@
 
 	 		<img src="img/logo.png" 
 	 		     class="w-25">
-	 		<h3 class="display-4 fs-1 
+	 		<h3 style="color:#00FFFF;"  class="display-4 fs-1 
 	 		           text-center">
 	 			       Registrarse</h3>   
 	 		</div>
@@ -52,18 +52,18 @@
 			?>
 
 	 	  <div class="mb-3">
-		    <label class="form-label">
+		    <label style="color:#00FFFF;"  class="form-label">
 		           Nombre</label>
-		    <input type="text"
+		    <input style="color:#00FFFF;background-color:#d300e7;" type="text"
 		           name="name"
 		           value="<?=$name?>" 
 		           class="form-control">
 		  </div>
 
 		  <div class="mb-3">
-		    <label class="form-label">
+		    <label style="color:#00FFFF;"  class="form-label">
 		           Nombre de usuario</label>
-		    <input type="text" 
+		    <input style="color:#00FFFF;background-color:#d300e7;" type="text" 
 		           class="form-control"
 		           value="<?=$username?>" 
 		           name="username">
@@ -71,25 +71,25 @@
 
 
 		  <div class="mb-3">
-		    <label class="form-label">
+		    <label style="color:#00FFFF;"  class="form-label">
 		           Contraseña</label>
-		    <input type="password" 
+		    <input style="color:#00FFFF;background-color:#d300e7;" type="password" 
 		           class="form-control"
 		           name="password">
 		  </div>
 
 		  <div class="mb-3">
-		    <label class="form-label">
+		    <label style="color:#00FFFF;" class="form-label">
 		           Foto de perfil</label>
-		    <input type="file" 
+		    <input style="color:#d300e7;background-color:#00FFFF;" type="file" 
 		           class="form-control"
 		           name="pp">
 		  </div>
 		  
-		  <button type="submit" 
+		  <button style="color:#00FFFF;background-color:#d300e7;"  type="submit" 
 		          class="btn btn-primary">
 		          Registrarse</button>
-		  <a href="index.php">Login</a>
+		  <a style="color:#00FFFF;"  href="index.php">Inicio</a>
 		</form>
 	 </div>
 </body>

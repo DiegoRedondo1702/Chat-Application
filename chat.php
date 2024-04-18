@@ -34,17 +34,18 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Chat App</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Orbitron:wght@400;700&family=Bebas+Neue&display=swap">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
         <link rel="stylesheet" 
             href="css/style.css">
         <link rel="icon" href="img/logo.png">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
-    <body class="d-flex
+    <body background="img/retro.jpg" class="d-flex
                 justify-content-center
                 align-items-center
                 vh-100">
-        <div class="w-400 shadow p-4 rounded">
+        <div style="border: 2px solid #00FFFF;" class="w-400 shadow p-4 rounded">
             <a href="home.php"
             class="fs-4 link-dark">&#8592;</a>
 
@@ -52,7 +53,7 @@
                 <img src="uploads/<?=$chatWith['p_p']?>"
                     class="w-15 rounded-circle">
 
-                <h3 class="display-4 fs-sm m-2">
+                <h3 style="background-color:#d300e7; color:#00FFFF;" class="display-4 fs-sm m-2">
                     <?=$chatWith['name']?> <br>
                     <div class="d-flex
                                 align-items-center"
@@ -61,10 +62,10 @@
                             if (last_seen($chatWith['last_seen']) == "Active") {
                         ?>
                             <div class="online"></div>
-                            <small class="d-block p-1">Online</small>
+                            <small  class="d-block p-1">Online</small>
                         <?php }else{ ?>
-                            <small  class="d-block p-1">
-                                Last seen:
+                            <small style="background-color:#d300e7; color:#00FFFF;"  class="d-block p-1">
+                                Ultima vez:
                                 <?=last_seen($chatWith['last_seen'])?>
                             </small>
                         <?php } ?>
@@ -106,11 +107,11 @@
                 </div>
                 <?php } ?>
             </div>
-            <div class="input-group mb-3">
-                <textarea cols="3"
+            <div  class="input-group mb-3">
+                <textarea style="background-color:#d300e7; color:#00FFFF;"  cols="3"
                             id="message"
                             class="form-control"></textarea>
-                <button class="btn btn-primary"
+                <button style="background-color:#00FFFF; color:#d300e7;"  class="btn btn-primary"
                         id="sendBtn">
                     <i class="fa fa-paper-plane"></i>
                 </button>

@@ -46,7 +46,7 @@
             <div class="mb-3">
                 <label style="color:#00FFFF;" class="form-label">
                     Usuario</label>
-                <input type="text" 
+                <input style="color:#00FFFF;background-color:#d300e7;" type="text" 
                     class="form-control"
                     name="username">
             </div>
@@ -54,15 +54,15 @@
             <div class="mb-3">
                 <label style="color:#00FFFF;" class="form-label">
                     Contraseña</label>
-                <input type="password" 
+                <input style="color:#00FFFF;background-color:#d300e7;" type="password" 
                     class="form-control"
                     name="password">
             </div>
             
-            <button type="submit" 
+            <button style="color:#00FFFF; background-color:#d300e7;" type="submit" 
                     class="btn btn-primary">
                     Iniciar Sesión</button>
-            <a href="signup.php">Registrarse</a>
+            <a style="color:#00FFFF ;" href="signup.php">Registrarse</a>
             </form>
         </div>
     </body>

@@ -19,14 +19,14 @@ if(isset($_POST['username']) &&
    #simple form Validation
    if (empty($name)) {
    	  # error message
-   	  $em = "Name is required";
+   	  $em = "Se requiere el nombre";
 
    	  # redirect to 'signup.php' and passing error message
    	  header("Location: ../../signup.php?error=$em");
    	  exit;
    }else if(empty($username)){
       # error message
-   	  $em = "Username is required";
+   	  $em = "Se requiere nombre de usuario";
 
    	  /*
     	redirect to 'signup.php' and 
@@ -36,7 +36,7 @@ if(isset($_POST['username']) &&
    	  exit;
    }else if(empty($password)){
    	  # error message
-   	  $em = "Password is required";
+   	  $em = "se requiere contraseña";
 
    	  /*
     	redirect to 'signup.php' and 
@@ -53,7 +53,7 @@ if(isset($_POST['username']) &&
       $stmt->execute([$username]);
 
       if($stmt->rowCount() > 0){
-      	$em = "The username ($username) is taken";
+      	$em = "El nombre de ($username) está tomado";
       	header("Location: ../../signup.php?error=$em&$data");
    	    exit;
       }else {
@@ -87,7 +87,7 @@ if(isset($_POST['username']) &&
 					# move uploaded image to ./upload folder
                     move_uploaded_file($tmp_name, $img_upload_path);
 				}else {
-					$em = "You can't upload files of this type";
+					$em = "No puedes subir archivos de este tipo.";
 			      	header("Location: ../../signup.php?error=$em&$data");
 			   	    exit;
 				}
@@ -117,7 +117,7 @@ if(isset($_POST['username']) &&
       	}
 
       	# success message
-      	$sm = "Account created successfully";
+      	$sm = "Cuenta creada exitosamente";
 
       	# redirect to 'index.php' and passing success message
       	header("Location: ../../index.php?success=$sm");

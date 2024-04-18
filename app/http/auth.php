@@ -15,13 +15,13 @@ if(isset($_POST['username']) &&
    #simple form Validation
    if(empty($username)){
       # error message
-      $em = "Username is required";
+      $em = "Nombre de usuario requerido";
 
       # redirect to 'index.php' and passing error message
       header("Location: ../../index.php?error=$em");
    }else if(empty($password)){
       # error message
-      $em = "Password is required";
+      $em = "Contraseña requerida";
 
       # redirect to 'index.php' and passing error message
       header("Location: ../../index.php?error=$em");
@@ -53,14 +53,14 @@ if(isset($_POST['username']) &&
 
           }else {
             # error message
-            $em = "Incorect Username or password";
+            $em = "Nombre de usuario o contraseña incorrectos";
 
             # redirect to 'index.php' and passing error message
             header("Location: ../../index.php?error=$em");
           }
         }else {
           # error message
-          $em = "Incorect Username or password";
+          $em = "Nombre de usuario o contraseña incorrectos";
 
           # redirect to 'index.php' and passing error message
           header("Location: ../../index.php?error=$em");
