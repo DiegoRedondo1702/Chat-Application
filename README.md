@@ -43,7 +43,7 @@ To get a local copy up and running follow these simple example steps.
 
 ## Authors
 
-👤 **Arístides José Molina Pérez**
+👤 **Diego Arnaldo Redondo Gonzalez**
 
 - GitHub: [@DiegoRedondo1702](https://github.com/DiegoRedondo1702)
 
